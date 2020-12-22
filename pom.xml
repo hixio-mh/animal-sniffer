@@ -32,7 +32,7 @@
   </parent>
 
   <artifactId>animal-sniffer-parent</artifactId>
-  <version>1.20-sonatype-fork-1</version>
+  <version>1.20-sonatype-fork-2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Animal Sniffer</name>
