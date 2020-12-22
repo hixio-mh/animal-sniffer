@@ -19,6 +19,7 @@
 stagingWorkflow {
   gitHubRepoPath = 'sonatype/animal-sniffer'
   channelToNotify = 'data-identity'
+  releaseProfiles = 'sonatype-internal-release'
 
   // OSS project that doesn't use our parent pom or the license check plugin
   licenseCheck = false

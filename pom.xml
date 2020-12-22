@@ -78,10 +78,9 @@
   </modules>
 
   <scm>
-    <connection>scm:git:https://github.com/mojohaus/animal-sniffer.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/mojohaus/animal-sniffer.git</developerConnection>
-    <url>https://github.com/mojohaus/animal-sniffer</url>
-    <tag>animal-sniffer-parent-1.18</tag>
+    <connection>scm:git:https://github.com/sonatype/animal-sniffer.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/sonatype/animal-sniffer.git</developerConnection>
+    <url>https://github.com/sonatype/animal-sniffer</url>
   </scm>
   <issueManagement>
     <system>GitHub</system>
@@ -273,6 +272,20 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+
+    <profile>
+      <id>sonatype-internal-release</id>
+      <distributionManagement>
+        <repository>
+          <id>sonatype-private</id>
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+        <snapshotRepository>
+          <id>sonatype-private</id>
+          <url>https://repository.sonatype.org/content/repositories/sonatype-internal-snapshots</url>
+        </snapshotRepository>
+      </distributionManagement>
     </profile>
 
   </profiles>
